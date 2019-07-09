@@ -19,8 +19,8 @@ public class Calculator {
             int fractionalResult = 1;
             for (int i = 1; i <= number2 ; i++) {
                 fractionalResult *= number1;
-            }  
+            }
             System.out.println(fractionalResult);
-        }    
-   } 
-}   
+        }
+    }
+}
