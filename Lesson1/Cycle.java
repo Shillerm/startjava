@@ -8,7 +8,7 @@ public class Cycle {
 		int counter = 6;
 		while(counter > -7) {
 			System.out.println("Even number " + counter);
-		counter -= 2;
+			counter -= 2;
 		}
 
 		counter = 10;
@@ -19,6 +19,6 @@ public class Cycle {
 				sumOdd += counter;
 			}
 		} while(counter < 20);
-			System.out.println("Sum odd numbers" + sumOdd);
+		System.out.println("Sum odd numbers" + sumOdd);
 	}
 }

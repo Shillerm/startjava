@@ -4,16 +4,16 @@ public class MyFirstGame {
         System.out.println("Guess Number");
 
         int guessNumber = 45;
-        int playerNumber =50;
-        do {
-            if (playerNumber < guessNumber) {
+        int playerNumber = 60;
+        while (guessNumber != playerNumber) {
+            if (playerNumber > guessNumber) {
                 System.out.println("Number <");
-                break;
-            } else if (playerNumber > guessNumber) {
-                System.out.println("Number >");
-            }
-                break;
-        } while (playerNumber != guessNumber);
+            playerNumber--;
+        } else {
+            System.out.println("Number >");
+            playerNumber++;
+        }
+    }
 
         System.out.println("You guessed it");
     }
