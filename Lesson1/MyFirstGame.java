@@ -8,12 +8,12 @@ public class MyFirstGame {
         while (guessNumber != playerNumber) {
             if (playerNumber > guessNumber) {
                 System.out.println("Number <");
-            playerNumber--;
-        } else {
-            System.out.println("Number >");
-            playerNumber++;
+                playerNumber--;
+            } else {
+                System.out.println("Number >");
+                playerNumber++;
+            }
         }
-    }
 
         System.out.println("You guessed it");
     }
