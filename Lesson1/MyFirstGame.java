@@ -7,10 +7,10 @@ public class MyFirstGame {
         int playerNumber = 60;
         while (guessNumber != playerNumber) {
             if (playerNumber > guessNumber) {
-                System.out.println("Number <");
+                System.out.println("Guess Number < " + playerNumber);
                 playerNumber--;
             } else {
-                System.out.println("Number >");
+                System.out.println("Guess Number > " + playerNumber);
                 playerNumber++;
             }
         }
