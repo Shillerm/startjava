@@ -6,27 +6,27 @@ public class Wolf {
     private int age;
     private String color;
 
-    public String getMale(){
+    public String getMale() {
         return male;
     }
 
-    public void setMale(String male){
+    public void setMale(String male) {
         this.male = male;
     }
 
-    public String getName(){
+    public String getName() {
         return name;
     }
 
-    public void setName(String name){
+    public void setName(String name) {
         this.name = name;
     }
 
-    public float getWeight(){
+    public float getWeight() {
         return weight;
     }
 
-    public void setWeight(float weight){
+    public void setWeight(float weight) {
         this.weight = weight;
     }
 
@@ -42,11 +42,11 @@ public class Wolf {
         }
     }
 
-    public String getColor(){
+    public String getColor() {
         return color;
     }
 
-    public void setColor(String color){
+    public void setColor(String color) {
         this.color = color;
     }
 
