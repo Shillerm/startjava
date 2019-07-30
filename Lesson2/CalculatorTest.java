@@ -4,7 +4,7 @@ class CalculatorTest {
 
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
-
+		Calculator calc = new Calculator();
 		char response;
 
 		do {
@@ -17,17 +17,16 @@ class CalculatorTest {
 			System.out.println("Enter second number: ");
 			int secondNumber = scanner.nextInt();
 
-			Calculator calc = new Calculator();
 			calc.setFirstNumber(firstNumber);
 			calc.setMathOperation(mathOperation);
 			calc.setSecondNumber(secondNumber);
 
 			int result = calc.calculate();
-			System.out.println(calc.getFirstNumber() + " " + calc.getMathOperation() + " " + calc.getSecondNumber() + " = " + result);
+			System.out.println(firstNumber + " " + mathOperation + " " + secondNumber + " = " + result);
         
 			do {
-        		System.out.println("Want to continue? [Yes/No]");
-        		response = scanner.next().charAt(0);
+        	System.out.println("Want to continue? [Yes/No]");
+        	response = scanner.next().charAt(0);
         	} while (response != 'Y' && response != 'N');
     	} while (response == 'Y');
     }

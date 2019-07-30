@@ -29,7 +29,7 @@ class Calculator {
     }
 
     public int calculate() {
-        switch (mathOperation){
+        switch (mathOperation) {
             case '+':
                 return firstNumber + secondNumber;
             case '-':
@@ -41,16 +41,14 @@ class Calculator {
             case '%':
                 return firstNumber % secondNumber;
             case '^':
-            int fractionalResult = 1;
-
-            for (int i = 1; i <= secondNumber ; i++) {
-                fractionalResult *= firstNumber;
-            }
-
+        int fractionalResult = 1;
+        for (int i = 1; i <= secondNumber ; i++) {
+            fractionalResult *= firstNumber;
+        }
             return fractionalResult;
             default:
                 System.out.println("Invalid operation entered: try again");
-               return 0;
+        return 0;
         }
     }
 }
